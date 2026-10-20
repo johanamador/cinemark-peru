@@ -2,9 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
-import { ThemeProvider } from "@/components/theme-provider"
+import { SiteShell } from "@/components/site-shell"
 import { Oswald } from "next/font/google"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -31,11 +30,10 @@ export default function RootLayout({
   return (
     <html lang="es" className={oswald.variable} suppressHydrationWarning>
       <body className={`${oswald.className} bg-black text-white min-h-screen flex flex-col`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <Header />
+        <SiteShell>
           <main className="flex-grow">{children}</main>
           <Footer />
-        </ThemeProvider>
+        </SiteShell>
       </body>
     </html>
   )

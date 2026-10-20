@@ -34,16 +34,12 @@ cd cinemark-peru
 2. Instala las dependencias:
 
 ```bash
-pnpm install
-# o
 npm install
 ```
 
 3. Ejecuta el servidor de desarrollo:
 
 ```bash
-pnpm dev
-# o
 npm run dev
 ```
 
@@ -69,6 +65,10 @@ npm run dev
 * **Cartelera interactiva**: Los usuarios pueden ver las películas en cartelera con filtros de formato e idioma, y acceder a los horarios disponibles de cada cine.
 
 ## Datos locales de demostración
+
+El proyecto usa npm y `package-lock.json` para reproducir las versiones en Vercel.
+Next.js está fijado en 15.5.28 y React/React DOM en 19.1.10. `.npmrc` conserva
+la compatibilidad de instalación con las dependencias de UI existentes.
 
 La aplicación funciona sin la API externa de Cinemark. Las tres rutas en `app/api/`
 leen `public/data/cinemark-snapshot.json`, una selección obtenida de las páginas
