@@ -3,6 +3,8 @@ export interface ComingSoonResponse {
 }
 
 export interface ComingSoonMovie {
+	GraphicUrl?: string;
+	Status?: string;
 	ID: string;
 	ScheduledFilmId: string;
 	Title: string;

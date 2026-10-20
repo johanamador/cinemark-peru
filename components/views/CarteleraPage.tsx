@@ -117,9 +117,8 @@ export default function CarteleraPage() {
   };
 
   const formatTime = (time: string) => {
-    const date = new Date(`1970-01-01T${time}Z`);
-    let hours: number | string = date.getHours();
-    const minutes: string = date.getMinutes().toString().padStart(2, "0");
+    const [hour, minutes] = time.split(":");
+    let hours = Number(hour);
     const period = hours >= 12 ? "PM" : "AM"; // Determinamos si es AM o PM
 
     if (hours > 12) {
@@ -193,10 +192,10 @@ export default function CarteleraPage() {
                 <MapPin className="h-5 w-5 text-cinemark-red shrink-0 mt-0.5" />
                 <p className="text-gray-300">{selectedCinema.Address1}</p>
               </div>
-              <div className="flex items-start gap-2">
+              {selectedCinema.PhoneNumber && <div className="flex items-start gap-2">
                 <Phone className="h-5 w-5 text-cinemark-red shrink-0 mt-0.5" />
                 <p className="text-gray-300">Tel: {selectedCinema.PhoneNumber}</p>
-              </div>
+              </div>}
             </div>
           </CardContent>
         </Card>
@@ -211,7 +210,8 @@ export default function CarteleraPage() {
           <TabsList className="w-full grid grid-cols-3 md:grid-cols-7 h-auto">
             {availableDates.map((date) => (
               <TabsTrigger key={date} value={date} className="py-2 uppercase">
-                {new Date(date).toLocaleDateString("es-PE", {
+                {new Date(`${date}T12:00:00-05:00`).toLocaleDateString("es-PE", {
+                  timeZone: "America/Lima",
                   weekday: "short",
                   day: "numeric",
                   month: "short"
@@ -260,7 +260,7 @@ export default function CarteleraPage() {
           <div key={movie.film_HO_code} className="bg-cinemark-dark border border-cinemark-gray rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] lg:grid-cols-[250px_1fr]">
               <div className="relative aspect-[2/3] md:h-full">
-                <Image src={`https://cinemarkmedia.modyocdn.com/pe/300x400/${movie.corporate_film_id}.jpg?version=1749715200000`} alt={movie.title} fill className="object-cover" />
+                <Image src={movie.graphic_url || "/placeholder.svg"} alt={movie.title} fill className="object-cover" />
               </div>
               <div className="p-6">
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-4">

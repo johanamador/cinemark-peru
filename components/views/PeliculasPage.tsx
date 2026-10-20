@@ -86,7 +86,7 @@ export default function PeliculasPage() {
 
   // Clasificación de películas
   const billboardPreventa = useMemo(() => (
-    billboard.filter((m) => new Date(m.opening_date) > hoy)
+    billboard.filter((m) => m.status === "PRESALE" || (!m.status && new Date(m.opening_date) > hoy))
   ), [billboard, hoy])
 
   const billboardCartelera = useMemo(() => {
@@ -95,7 +95,7 @@ export default function PeliculasPage() {
       return diff <= 7 && diff >= 0
     }
     return billboard
-      .filter((m) => new Date(m.opening_date) <= hoy)
+      .filter((m) => m.status === "SHOWING_NOW" || (!m.status && new Date(m.opening_date) <= hoy))
       .sort((a, b) => {
         const aRecent = estrenoReciente(a.opening_date)
         const bRecent = estrenoReciente(b.opening_date)
@@ -107,7 +107,7 @@ export default function PeliculasPage() {
     return comingSoonFilter.filter((movie) => {
       const estreno = new Date(movie.OpeningDate)
       const diasParaEstreno = (estreno.getTime() - hoy.getTime()) / (1000 * 60 * 60 * 24)
-      return diasParaEstreno <= 7 && !billboardIds.has(movie.CorporateFilmId)
+      return (movie.Status === "PRESALE" || (!movie.Status && diasParaEstreno >= 0 && diasParaEstreno <= 7)) && !billboardIds.has(movie.CorporateFilmId)
     })
   }, [comingSoonFilter, billboardIds, hoy])
 
@@ -121,7 +121,7 @@ export default function PeliculasPage() {
 
   // Filtrar según búsqueda
   const filteredCartelera = filterMovies(billboardCartelera, searchQuery)
-  const filteredPreventa = filterMovies(billboardPreventa, searchQuery)
+  const filteredPreventa = filterMovies([...billboardPreventa, ...preventa], searchQuery)
   const filteredProximamente = filterMovies(proximamente, searchQuery)
 
   // Pantalla de carga
@@ -179,8 +179,8 @@ function PeliculasGrid({ peliculas, tipo }: { peliculas: (BillboardMovie | Comin
       {peliculas.map((movie) => {
         const isBillboard = "title" in movie
         const id = isBillboard ? movie.film_HO_code : movie.CorporateFilmId
-        const titulo = isBillboard ? movie.title : movie.SynopsisAlt
-        const imagen = isBillboard ? `https://cinemarkmedia.modyocdn.com/pe/300x400/${movie.corporate_film_id}.jpg?version=1749715200000` : `https://cinemarkmedia.modyocdn.com/pe/300x400/${movie.CorporateFilmId}.jpg?version=1749715200000`
+        const titulo = isBillboard ? movie.title : movie.Title
+        const imagen = (isBillboard ? movie.graphic_url : movie.GraphicUrl) || "/placeholder.svg"
         const clasificacion = isBillboard ? movie.rating : movie.Rating
         const duracion = isBillboard ? movie.runtime : movie.RunTime
         const fechaEstreno = isBillboard ? movie.opening_date : movie.OpeningDate

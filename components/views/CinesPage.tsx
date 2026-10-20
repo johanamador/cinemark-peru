@@ -134,10 +134,10 @@ export default function CinesPage() {
                   <p className="text-sm text-gray-300">{cine.Address1}</p>
                 </div>
 
-                <div className="flex items-center gap-2 mb-3">
+                {cine.PhoneNumber && <div className="flex items-center gap-2 mb-3">
                   <Phone className="h-4 w-4 text-cinemark-red" />
                   <p className="text-sm text-gray-300">{cine.PhoneNumber}</p>
-                </div>
+                </div>}
 
                 <div className="flex flex-col gap-2">
                   <Button className="w-full bg-cinemark-red hover:bg-red-700 text-white uppercase">Ver Cartelera</Button>

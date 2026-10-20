@@ -27,7 +27,7 @@ export default function MovieDetailModal({ movie, isOpen, onClose }: MovieDetail
 					{/* Poster */}
 					<div className="relative">
 						<Image
-							src={`https://cinemarkmedia.modyocdn.com/pe/300x400/${movie.CorporateFilmId}.jpg?version=1749715200000` || "/placeholder.svg"}
+							src={movie.GraphicUrl || "/placeholder.svg"}
 							alt={movie.Title}
 							width={300}
 							height={450}
@@ -70,7 +70,7 @@ export default function MovieDetailModal({ movie, isOpen, onClose }: MovieDetail
 						</div>
 
 						{/* Trailer */}
-						<div>
+						{movie.TrailerUrl && <div>
 							<h3 className="text-lg font-semibold text-white mb-3 uppercase">Trailer</h3>
 							<div className="relative aspect-video bg-black rounded-lg overflow-hidden">
 								<iframe
@@ -81,7 +81,7 @@ export default function MovieDetailModal({ movie, isOpen, onClose }: MovieDetail
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 								/>
 							</div>
-						</div>
+						</div>}
 
 						{/* Botones de acción */}
 						<div className="flex flex-col sm:flex-row gap-3 pt-4">

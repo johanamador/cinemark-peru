@@ -8,7 +8,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Librerías de terceros
-import { format } from "date-fns";
 import { ChevronRight } from "lucide-react";
 
 // Componentes UI
@@ -25,31 +24,23 @@ import { getCinemaImage } from "@/lib/get-cinema-image";
 import LoadingScreen from "../loading-screen";
 
 // Constantes
-const posters = [
-  "/bailarina/ana-de-armas.jpg",
-  "/bailarina/john-wick.jpg",
-  "/bailarina/norman-reedus.jpg",
-  "/bailarina/sooyoung.jpg",
-];
-
 const movie = {
-  title: "Bailarina",
+  title: "Avengers: Doomsday",
   description:
-    "Una asesina entrenada en las tradiciones de la organización Ruska Roma se embarca en una misión de venganza tras la muerte de su padre.",
-  logo: "/bailarina/ballerina-logo.png",
+    "Héroes procedentes de distintos universos deben colaborar ante una amenaza que pone en riesgo su existencia.",
+  background: "/doomsday/avengers-doomsday-wallpaper.jpg",
+  logo: "/doomsday/avengers-doomsday-logo.png",
 };
 
 export default function Home() {
-  // Estados: Datos externos (api.cinemark-peru.com)
+  // Datos locales servidos por las rutas de demostración.
   const [billboard, setBillboard] = useState<BillboardResponse[]>([]);
   const [comingSoon, setComingSoon] = useState<ComingSoonMovie[]>([]);
   const [theatres, setTheatres] = useState<TheatreGroup[]>([]);
 
   // Estados: UI y comportamiento
-  const [currentMovie, setCurrentMovie] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentCinemaPage, setCurrentCinemaPage] = useState(0);
-  const [scrollY, setScrollY] = useState(0);
   const [today, setToday] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -91,20 +82,7 @@ export default function Home() {
 
   // Efectos
   useEffect(() => {
-    setToday(format(new Date(), "yyyy-MM-dd"));
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentMovie((prev) => (prev + 1) % posters.length);
-    }, 3000);
-    return () => clearInterval(interval);
+    setToday(new Intl.DateTimeFormat("en-CA", { timeZone: "America/Lima" }).format(new Date()));
   }, []);
 
   useEffect(() => {
@@ -175,37 +153,27 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[70vh] overflow-hidden">
-        {posters.map((poster, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${currentMovie === index ? "opacity-100 z-10" : "opacity-0 z-0"
-              }`}
-          >
+          <div className="absolute inset-0">
             <Image
-              src={poster}
-              alt={movie.title}
+              src={movie.background}
+              alt=""
+              aria-hidden="true"
               fill
-              className="object-cover object-top"
-              priority={index === 0}
-              style={{
-                transform: scrollY !== undefined ? `translateY(${scrollY * 0.2}px)` : undefined,
-                transition: "transform 0.1s ease-out",
-              }}
+              sizes="100vw"
+              className="object-cover object-[62%_center] md:object-center"
+              priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
             <div
               className="absolute inset-0 flex flex-col justify-end p-6 md:p-12 max-w-7xl mx-auto"
-              style={{
-                transform: scrollY !== undefined ? `translateY(${scrollY * -0.05}px)` : undefined,
-                transition: "transform 0.1s ease-out",
-              }}
             >
               <Image
                 src={movie.logo}
                 alt={movie.title}
-                width={500}
-                height={100}
-                className="mb-4"
+                width={1193}
+                height={670}
+                sizes="(max-width: 600px) 80vw, 500px"
+                className="mb-4 h-auto max-h-[28vh] w-full max-w-[500px] object-contain object-left"
                 priority
               />
               <p className="text-lg md:text-xl text-gray-200 mb-6 max-w-2xl">{movie.description}</p>
@@ -217,20 +185,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        ))}
-
-        {/* Indicadores del carrusel */}
-        <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-30">
-          {posters.map((_, index) => (
-            <button
-              key={index}
-              className={`w-2 h-2 rounded-full transition-colors ${currentMovie === index ? "bg-cinemark-red" : "bg-white/50"
-                }`}
-              onClick={() => setCurrentMovie(index)}
-              aria-label={`Ver imagen ${index + 1}`}
-            />
-          ))}
-        </div>
       </section>
 
       {/* En Cartelera Section */}
@@ -248,7 +202,7 @@ export default function Home() {
                 src={
                   movie.graphic_url && movie.graphic_url !== ""
                     ? movie.graphic_url
-                    : `https://cinemarkmedia.modyocdn.com/pe/300x400/${movie.corporate_film_id}.jpg?version=1749715200000`
+                    : "/placeholder.svg"
                 }
                 alt={movie.title}
                 width={300}
@@ -285,9 +239,7 @@ export default function Home() {
             <div key={movie.ID} className="flex bg-black/50 rounded-lg overflow-hidden" onClick={() => openMovieModal(movie)}>
               <Image
                 src={
-                  movie.CorporateFilmId
-                    ? `https://cinemarkmedia.modyocdn.com/pe/300x400/${movie.CorporateFilmId}.jpg?version=1749715200000`
-                    : "/placeholder.svg"
+                  movie.GraphicUrl || "/placeholder.svg"
                 }
                 alt={movie.SynopsisAlt}
                 width={150}

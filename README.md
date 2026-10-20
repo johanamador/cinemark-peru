@@ -68,6 +68,35 @@ npm run dev
 * **Integración de la API de Cinemark**: Ahora se cargan los datos de la cartelera y cines de manera dinámica desde la API de Cinemark.
 * **Cartelera interactiva**: Los usuarios pueden ver las películas en cartelera con filtros de formato e idioma, y acceder a los horarios disponibles de cada cine.
 
+## Datos locales de demostración
+
+La aplicación funciona sin la API externa de Cinemark. Las tres rutas en `app/api/`
+leen `public/data/cinemark-snapshot.json`, una selección obtenida de las páginas
+públicas de [Cinemark Perú](https://www.cinemark-peru.com/) el 19 de octubre de 2026:
+12 películas en cartelera, 6 preventas, 8 próximos estrenos y 15 cines.
+Cada película conserva su URL de origen y la del afiche. Los afiches y las imágenes
+de cines se sirven desde `public/`; los tráileres de YouTube requieren conexión.
+Las sinopsis son resúmenes breves redactados para esta demo.
+
+Los horarios, asientos y asignaciones de películas por cine son ficticios. Se
+generan para siete días desde la fecha actual de Lima, de modo que la cartelera
+no quede vacía al volver a abrir el proyecto. La clasificación de cartelera,
+preventa y próximos estrenos corresponde a la captura, sin convertirse en una
+cartelera oficial actualizada. No se implementan compras ni reservas reales.
+El hero utiliza un fondo fijo y un logo de Avengers: Doomsday desde `public/doomsday/`.
+
+Verificación: `npm run typecheck`, `npm test` y `npm run build`.
+No se necesita configurar variables de entorno ni servicios externos.
+
+La captura se puede actualizar manualmente con `npm run scrape:cinemark`.
+El script lee HTML público sin ejecutar JavaScript descargado y no se ejecuta
+al arrancar ni al compilar. Si aparecen nuevas películas, primero revisa
+`node scripts/scrape-cinemark.mjs --refresh --inspect` y agrega un resumen propio
+en `scripts/movie-summaries.json`. Las páginas consultadas se guardan en una
+caché temporal fuera del repositorio; `--refresh` vuelve a consultarlas.
+Los JSON anteriores de `peliculas.json` y `cines.json` se conservan como recursos
+históricos y no alimentan estas rutas.
+
 ---
 
 ## Licencia

@@ -4,6 +4,7 @@ export interface BillboardResponse {
 }
 
 export interface BillboardMovie {
+	status?: string;
 	title: string;
 	trailer_url: string;
 	graphic_url: string;
