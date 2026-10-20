@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test scripts/mock-data.test.mjs",
+    "scrape:cinemark": "node scripts/scrape-cinemark.mjs --refresh"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

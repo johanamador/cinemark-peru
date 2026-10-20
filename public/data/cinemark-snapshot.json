@@ -1,0 +1,782 @@
+{
+  "capturedOn": "2026-10-19",
+  "source": "https://www.cinemark-peru.com",
+  "notes": "Public movie and cinema facts. Original short summaries. Demonstration schedules are generated locally, not scraped or official.",
+  "movies": [
+    {
+      "id": "112551",
+      "title": "AVENGERS ENDGAME [RE ESTRENO]",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/avengers-endgame-re-estreno.jpg",
+      "runtime": "185",
+      "rating": "APT",
+      "openingDate": "2026-09-24T12:00:00-05:00",
+      "genres": [
+        "Acción",
+        "Aventuras"
+      ],
+      "synopsis": "Los héroes supervivientes buscan una forma de revertir la catástrofe provocada por Thanos y recuperar a quienes desaparecieron.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/znk2OICHbjY",
+      "formats": [
+        "2D",
+        "IV",
+        "XD",
+        "DBOX"
+      ],
+      "languages": [
+        "DOB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/avengers-endgame-re-estreno",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009508.jpg"
+    },
+    {
+      "id": "107269",
+      "title": "LOS INOCENTES",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/los-inocentes.jpg",
+      "runtime": "90",
+      "rating": "M14",
+      "openingDate": "2026-10-15T12:00:00-05:00",
+      "genres": [
+        "Drama"
+      ],
+      "synopsis": "Un adolescente intenta encontrar su lugar entre las presiones de su barrio, sus afectos y una peligrosa prueba de pertenencia.",
+      "trailerUrl": "",
+      "formats": [
+        "2D"
+      ],
+      "languages": [
+        "DOB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/los-inocentes",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009776.jpg"
+    },
+    {
+      "id": "112999",
+      "title": "YO NARCISO",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/yo-narciso.jpg",
+      "runtime": "94",
+      "rating": "M14",
+      "openingDate": "2026-10-15T12:00:00-05:00",
+      "genres": [
+        "Comedia",
+        "Romance"
+      ],
+      "synopsis": "Una socióloga se hace pasar por paciente para investigar a un cirujano egocéntrico, pero el vínculo complica su experimento.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/ObZNzsevpXE",
+      "formats": [
+        "2D",
+        "COMFORT"
+      ],
+      "languages": [
+        "DOB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/yo-narciso",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009774.jpg"
+    },
+    {
+      "id": "113000",
+      "title": "LA CAIDA DE LA BALLENA",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/la-caida-de-la-ballena.jpg",
+      "runtime": "106",
+      "rating": "M14",
+      "openingDate": "2026-10-15T12:00:00-05:00",
+      "genres": [
+        "Thriller"
+      ],
+      "synopsis": "La búsqueda de los restos de su padre deja a un joven atrapado dentro de una ballena, con el oxígeno agotándose.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/pS4qvMZh9fA",
+      "formats": [
+        "2D",
+        "COMFORT",
+        "DBOX",
+        "XD"
+      ],
+      "languages": [
+        "DOB",
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/la-caida-de-la-ballena",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009763.jpg"
+    },
+    {
+      "id": "113001",
+      "title": "STREET FIGHTER",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/street-fighter.jpg",
+      "runtime": "125",
+      "rating": "M14",
+      "openingDate": "2026-10-15T12:00:00-05:00",
+      "genres": [
+        "Acción",
+        "Drama"
+      ],
+      "synopsis": "Ryu y Ken regresan al combate por invitación de Chun-Li y descubren que el torneo oculta una conspiración.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/6bJqkomxJXg",
+      "formats": [
+        "2D",
+        "DBOX",
+        "XD"
+      ],
+      "languages": [
+        "DOB",
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/street-fighter",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009388.jpg"
+    },
+    {
+      "id": "113002",
+      "title": "ENTREGA AL LIMITE",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/entrega-al-limite.jpg",
+      "runtime": "98",
+      "rating": "M14",
+      "openingDate": "2026-10-15T12:00:00-05:00",
+      "genres": [
+        "Acción",
+        "Comedia"
+      ],
+      "synopsis": "Un mensajero debe entregar un órgano para un trasplante mientras un criminal intenta apoderarse de su carga.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/YJTR-wQ9MvM",
+      "formats": [
+        "2D",
+        "XD",
+        "DBOX",
+        "COMFORT"
+      ],
+      "languages": [
+        "DOB",
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/entrega-al-limite",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009777.jpg"
+    },
+    {
+      "id": "113275",
+      "title": "PESADILLA EN ELM STREET [TEMPORADA SINIESTRA]",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/pesadilla-en-elm-street-temporada-siniestra.jpg",
+      "runtime": "91",
+      "rating": "M14",
+      "openingDate": "2026-10-15T12:00:00-05:00",
+      "genres": [
+        "Terror"
+      ],
+      "synopsis": "Un asesino amenaza a un grupo de jóvenes desde sus pesadillas; mantenerse despiertos deja de ser una solución duradera.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/CBcVZcornjI",
+      "formats": [
+        "2D"
+      ],
+      "languages": [
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/pesadilla-en-elm-street-temporada-siniestra",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009863.jpg"
+    },
+    {
+      "id": "113277",
+      "title": "VIERNES 13 [TEMPORADA SINIESTRA]",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/viernes-13-temporada-siniestra.jpg",
+      "runtime": "95",
+      "rating": "M14",
+      "openingDate": "2026-10-15T12:00:00-05:00",
+      "genres": [
+        "Terror"
+      ],
+      "synopsis": "La reapertura de Crystal Lake expone a sus monitores a un asesino vinculado con el oscuro pasado del campamento.",
+      "trailerUrl": "",
+      "formats": [
+        "2D"
+      ],
+      "languages": [
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/viernes-13-temporada-siniestra",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009865.jpg"
+    },
+    {
+      "id": "113278",
+      "title": "EL EXORCISTA DEL PAPA [TEMPORADA SINIESTRA]",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/el-exorcista-del-papa-temporada-siniestra.jpg",
+      "runtime": "103",
+      "rating": "M14",
+      "openingDate": "2026-10-15T12:00:00-05:00",
+      "genres": [
+        "Terror"
+      ],
+      "synopsis": "El exorcista Gabriele Amorth investiga un caso en España que lo conduce a secretos ocultos por el Vaticano.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/SoIOGkxB-Rk",
+      "formats": [
+        "2D"
+      ],
+      "languages": [
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/el-exorcista-del-papa-temporada-siniestra",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009867.jpg"
+    },
+    {
+      "id": "113279",
+      "title": "EL EXORCISTA [TEMPORADA SINIESTRA]",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/el-exorcista-temporada-siniestra.jpg",
+      "runtime": "132",
+      "rating": "M14",
+      "openingDate": "2026-10-15T12:00:00-05:00",
+      "genres": [
+        "Terror"
+      ],
+      "synopsis": "Una madre pide ayuda a dos sacerdotes cuando la conducta de su hija apunta a una presencia demoníaca.",
+      "trailerUrl": "",
+      "formats": [
+        "2D"
+      ],
+      "languages": [
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/el-exorcista-temporada-siniestra",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009869.jpg"
+    },
+    {
+      "id": "113317",
+      "title": "ESCUELA DE MONSTRUOS",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/escuela-de-monstruos.jpg",
+      "runtime": "81",
+      "rating": "APT",
+      "openingDate": "2026-10-15T12:00:00-05:00",
+      "genres": [
+        "Animada"
+      ],
+      "synopsis": "La única alumna humana de una escuela de monstruos encuentra aliados para detener los planes de su director.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/2iaKr78081o",
+      "formats": [
+        "2D"
+      ],
+      "languages": [
+        "DOB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/escuela-de-monstruos",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009843.jpg"
+    },
+    {
+      "id": "113318",
+      "title": "LOS JUEGOS DEL HAMBRE: SINSAJO PT1 [2014]",
+      "status": "SHOWING_NOW",
+      "poster": "/movies/los-juegos-del-hambre-sinsajo-pt1-2014.jpg",
+      "runtime": "123",
+      "rating": "M14",
+      "openingDate": "2026-10-15T12:00:00-05:00",
+      "genres": [
+        "Acción",
+        "Aventuras"
+      ],
+      "synopsis": "Desde el Distrito 13, Katniss se convierte en símbolo de la rebelión mientras intenta rescatar a Peeta.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/7lQtPxVwz8A",
+      "formats": [
+        "2D"
+      ],
+      "languages": [
+        "DOB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/los-juegos-del-hambre-sinsajo-pt1-2014",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009731.jpg"
+    },
+    {
+      "id": "109367",
+      "title": "AVENGERS: DOOMSDAY",
+      "status": "PRESALE",
+      "poster": "/movies/avengers-doomsday.jpg",
+      "runtime": "165",
+      "rating": "APT",
+      "openingDate": "2026-12-17T12:00:00-05:00",
+      "genres": [
+        "Acción",
+        "Aventuras",
+        "Ficción"
+      ],
+      "synopsis": "Héroes procedentes de distintos universos deben colaborar ante una amenaza que pone en riesgo su existencia.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/NzsDtHCdhGc",
+      "formats": [
+        "3D",
+        "DBOX",
+        "IV",
+        "XD",
+        "2D",
+        "COMFORT"
+      ],
+      "languages": [
+        "DOB",
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/avengers-doomsday",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009745.jpg"
+    },
+    {
+      "id": "112807",
+      "title": "DUNA: PARTE TRES",
+      "status": "PRESALE",
+      "poster": "/movies/duna-parte-tres.jpg",
+      "runtime": "167",
+      "rating": "M14",
+      "openingDate": "2026-12-15T12:00:00-05:00",
+      "genres": [
+        "Acción"
+      ],
+      "synopsis": "Paul Atreides afronta las consecuencias de su poder imperial entre conspiraciones, rebeliones y el recuerdo de Chani.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/GOK-w2b5ph8",
+      "formats": [
+        "2D",
+        "XD",
+        "DBOX"
+      ],
+      "languages": [
+        "DOB",
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/duna-parte-tres",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009597.jpg"
+    },
+    {
+      "id": "113105",
+      "title": "CLAYFACE",
+      "status": "PRESALE",
+      "poster": "/movies/clayface.jpg",
+      "runtime": "108",
+      "rating": "M18",
+      "openingDate": "2026-10-22T12:00:00-05:00",
+      "genres": [
+        "Terror",
+        "Suspenso"
+      ],
+      "synopsis": "La transformación de un actor en una criatura vengativa enfrenta su ambición con la pérdida de su identidad.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/EVYL3zS8HKA",
+      "formats": [
+        "2D",
+        "XD",
+        "DBOX"
+      ],
+      "languages": [
+        "DOB",
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/clayface",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009730.jpg"
+    },
+    {
+      "id": "113313",
+      "title": "OBSESIÓN [TEMPORADA SINIESTRA]",
+      "status": "PRESALE",
+      "poster": "/movies/obsesion-temporada-siniestra.jpg",
+      "runtime": "108",
+      "rating": "M14",
+      "openingDate": "2026-10-22T12:00:00-05:00",
+      "genres": [
+        "Terror"
+      ],
+      "synopsis": "Un joven consigue el amor que deseaba mediante un objeto misterioso, pero pronto descubre las consecuencias de su petición.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/O-A8hLCAkys",
+      "formats": [
+        "2D"
+      ],
+      "languages": [
+        "DOB",
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/obsesion-temporada-siniestra",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009878.jpg"
+    },
+    {
+      "id": "113320",
+      "title": "LOS JUEGOS DEL HAMBRE: SINSAJO PT2 [2015]",
+      "status": "PRESALE",
+      "poster": "/movies/los-juegos-del-hambre-sinsajo-pt2-2015.jpg",
+      "runtime": "137",
+      "rating": "M14",
+      "openingDate": "2026-10-22T12:00:00-05:00",
+      "genres": [
+        "Acción"
+      ],
+      "synopsis": "Katniss y sus aliados abandonan el refugio del Distrito 13 para enfrentar a Snow en una nación en guerra.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/7lQtPxVwz8A",
+      "formats": [
+        "2D"
+      ],
+      "languages": [
+        "DOB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/los-juegos-del-hambre-sinsajo-pt2-2015",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009839.jpg"
+    },
+    {
+      "id": "112523",
+      "title": "AKIRA [1988]",
+      "status": "PRESALE",
+      "poster": "/movies/akira-1988.jpg",
+      "runtime": "124",
+      "rating": "M14",
+      "openingDate": "2026-11-12T12:00:00-05:00",
+      "genres": [
+        "Anime"
+      ],
+      "synopsis": "En una Neo-Tokio al borde del colapso, experimentos militares con poderes extraordinarios amenazan el frágil equilibrio de la ciudad.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/zYKVc2AyFCU",
+      "formats": [
+        "2D"
+      ],
+      "languages": [
+        "SUB"
+      ],
+      "source": "https://www.cinemark-peru.com/pelicula/akira-1988",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009860.jpg"
+    },
+    {
+      "id": "111054",
+      "title": "TERROR EN EL VUELO",
+      "status": "COMING_SOON",
+      "poster": "/movies/terror-en-el-vuelo.jpg",
+      "runtime": "91",
+      "rating": "M14",
+      "openingDate": "2026-10-22T12:00:00-05:00",
+      "genres": [
+        "Acción"
+      ],
+      "synopsis": "Un antiguo instructor militar se enfrenta a los secuestradores de un avión para proteger a su familia y a los pasajeros.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/peKFac88fHE",
+      "formats": [],
+      "languages": [],
+      "source": "https://www.cinemark-peru.com/pelicula/terror-en-el-vuelo",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009552.jpg"
+    },
+    {
+      "id": "112675",
+      "title": "EKEKO",
+      "status": "COMING_SOON",
+      "poster": "/movies/ekeko.jpg",
+      "runtime": "90",
+      "rating": "M14",
+      "openingDate": "2026-10-22T12:00:00-05:00",
+      "genres": [
+        "Terror"
+      ],
+      "synopsis": "Un Ekeko concede deseos a tres personas, pero la aparente abundancia pronto revela un costo aterrador.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/3Bdkk-0HDpM",
+      "formats": [],
+      "languages": [],
+      "source": "https://www.cinemark-peru.com/pelicula/ekeko",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009341.jpg"
+    },
+    {
+      "id": "112850",
+      "title": "EL PODER DE LA RED",
+      "status": "COMING_SOON",
+      "poster": "/movies/el-poder-de-la-red.jpg",
+      "runtime": "112",
+      "rating": "M14",
+      "openingDate": "2026-10-22T12:00:00-05:00",
+      "genres": [
+        "Drama"
+      ],
+      "synopsis": "Una ingeniera y un periodista colaboran para revelar información que una poderosa red social mantiene oculta.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/y103wGT5wTk",
+      "formats": [],
+      "languages": [],
+      "source": "https://www.cinemark-peru.com/pelicula/el-poder-de-la-red",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009391.jpg"
+    },
+    {
+      "id": "113107",
+      "title": "SENSATEZ Y SENTIMIENTO",
+      "status": "COMING_SOON",
+      "poster": "/movies/sensatez-y-sentimiento.jpg",
+      "runtime": "131",
+      "rating": "M14",
+      "openingDate": "2026-10-22T12:00:00-05:00",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "synopsis": "Dos hermanas recorren caminos distintos frente al amor y las expectativas sociales en una nueva adaptación de Jane Austen.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/UEkh_tamWTA",
+      "formats": [],
+      "languages": [],
+      "source": "https://www.cinemark-peru.com/pelicula/sensatez-y-sentimiento",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009413.jpg"
+    },
+    {
+      "id": "113108",
+      "title": "TERROR EN EL AMAZONAS",
+      "status": "COMING_SOON",
+      "poster": "/movies/terror-en-el-amazonas.jpg",
+      "runtime": "104",
+      "rating": "M14",
+      "openingDate": "2026-10-22T12:00:00-05:00",
+      "genres": [
+        "Terror"
+      ],
+      "synopsis": "Una misión médica en la Amazonía queda atrapada en el territorio de una criatura ancestral que domina la selva y el río.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/GDN6JIgum0A",
+      "formats": [],
+      "languages": [],
+      "source": "https://www.cinemark-peru.com/pelicula/terror-en-el-amazonas",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009733.jpg"
+    },
+    {
+      "id": "113109",
+      "title": "SACRIFICIO",
+      "status": "COMING_SOON",
+      "poster": "/movies/sacrificio.jpg",
+      "runtime": "103",
+      "rating": "M14",
+      "openingDate": "2026-10-22T12:00:00-05:00",
+      "genres": [
+        "Acción",
+        "Drama"
+      ],
+      "synopsis": "Un grupo radical irrumpe en una gala benéfica para buscar un objeto asociado con una antigua profecía.",
+      "trailerUrl": "",
+      "formats": [],
+      "languages": [],
+      "source": "https://www.cinemark-peru.com/pelicula/sacrificio",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009798.jpg"
+    },
+    {
+      "id": "113315",
+      "title": "EL PASAJERO DEL DIABLO [TEMPORADA SINIESTRA]",
+      "status": "COMING_SOON",
+      "poster": "/movies/el-pasajero-del-diablo-temporada-siniestra.jpg",
+      "runtime": "94",
+      "rating": "M14",
+      "openingDate": "2026-10-22T12:00:00-05:00",
+      "genres": [
+        "Terror"
+      ],
+      "synopsis": "Después de presenciar un accidente, una pareja descubre que una presencia demoníaca los persigue durante su viaje.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/1QF93DfZ-aw",
+      "formats": [],
+      "languages": [],
+      "source": "https://www.cinemark-peru.com/pelicula/el-pasajero-del-diablo-temporada-siniestra",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009880.jpg"
+    },
+    {
+      "id": "113316",
+      "title": "LOS OTROS [2001][TEMPORADA SINIESTRA]",
+      "status": "COMING_SOON",
+      "poster": "/movies/los-otros-2001-temporada-siniestra.jpg",
+      "runtime": "105",
+      "rating": "M14",
+      "openingDate": "2026-10-22T12:00:00-05:00",
+      "genres": [
+        "Terror"
+      ],
+      "synopsis": "Una madre protege a sus hijos sensibles a la luz mientras sucesos inexplicables alteran la casa en la que viven.",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/dezP9YpN-hY",
+      "formats": [],
+      "languages": [],
+      "source": "https://www.cinemark-peru.com/pelicula/los-otros-2001-temporada-siniestra",
+      "posterSource": "https://cdn.cinemark-peru.com/content/posters/HO00009882.jpg"
+    }
+  ],
+  "theatres": [
+    {
+      "ID": "740",
+      "Name": "Cinemark Jockey Plaza",
+      "PhoneNumber": "",
+      "City": "Lima",
+      "Address1": "Av. Javier Prado Este 4200 Monterrico Surco",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-12.085298742621475",
+      "Longitude": "-76.97810272391128",
+      "Description": "2D | 3D | DBOX | XD | COMFORT | INFINITY VISION",
+      "Slug": "cinemark-jockey-plaza"
+    },
+    {
+      "ID": "2705",
+      "Name": "Cinemark Gamarra",
+      "PhoneNumber": "",
+      "City": "Lima",
+      "Address1": "Avenida Aviación 950 La Victoria, LIMA 13",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-12.070857442351953",
+      "Longitude": "-77.01492682391148",
+      "Description": "2D | 3D | INFINITY VISION",
+      "Slug": "cinemark-gamarra"
+    },
+    {
+      "ID": "659",
+      "Name": "Cinemark Outlet Arauco Arequipa",
+      "PhoneNumber": "",
+      "City": "Arequipa",
+      "Address1": "Av. Lambramani 325 Sector 2 - Arequipa",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-16.410758438436268",
+      "Longitude": "-71.52252502383078",
+      "Description": "2D | 3D | INFINITY VISION",
+      "Slug": "cinemark-outlet-arauco-arequipa"
+    },
+    {
+      "ID": "778",
+      "Name": "Cinemark Mall Aventura Arequipa",
+      "PhoneNumber": "",
+      "City": "Arequipa",
+      "Address1": "Av. Porongoche #500 (Ex. Hipodromo Porongoche) Paucarpata - Arequipa",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-16.414387292647113",
+      "Longitude": "-71.51909537409466",
+      "Description": "2D | 3D | DBOX | XD | INFINITY VISION",
+      "Slug": "cinemark-mall-aventura-arequipa"
+    },
+    {
+      "ID": "600",
+      "Name": "Cinemark MallPlaza Angamos",
+      "PhoneNumber": "",
+      "City": "Lima",
+      "Address1": "Av. Angamos Nº 1803 y/o Av. Tomas Marsano Nº 961- Surquillo",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-12.111554443112539",
+      "Longitude": "-77.01531552391084",
+      "Description": "2D | 3D | DBOX | XD | INFINITY VISION",
+      "Slug": "cinemark-mallplaza-angamos"
+    },
+    {
+      "ID": "754",
+      "Name": "Cinemark Mallplaza Bellavista",
+      "PhoneNumber": "",
+      "City": "Callao",
+      "Address1": "Av. Oscar R. Benavides (Ex Colonial) 3866, Centro Comercial Mall Plaza Bellavista",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-12.056383642082052",
+      "Longitude": "-77.10424162391175",
+      "Description": "2D | 3D | DBOX | XD | INFINITY VISION",
+      "Slug": "cinemark-mallplaza-bellavista"
+    },
+    {
+      "ID": "2706",
+      "Name": "Cinemark Mallplaza Comas",
+      "PhoneNumber": "",
+      "City": "Lima",
+      "Address1": "MallPlaza, Las Almendras 126, Comas",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-11.93674003986406",
+      "Longitude": "-77.06850082391371",
+      "Description": "2D | 3D | DBOX | XD | INFINITY VISION",
+      "Slug": "cinemark-mallplaza-comas"
+    },
+    {
+      "ID": "2702",
+      "Name": "Cinemark MallPlaza Huancayo",
+      "PhoneNumber": "",
+      "City": "Huancayo",
+      "Address1": "Av. Ferrocarril 146 - 150 esquina con prolongación San Carlos",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-12.062335942192941",
+      "Longitude": "-75.21154822391169",
+      "Description": "2D | 3D | DBOX | XD | INFINITY VISION",
+      "Slug": "cinemark-mallplaza-huancayo"
+    },
+    {
+      "ID": "660",
+      "Name": "Cinemark MallPlaza Piura",
+      "PhoneNumber": "",
+      "City": "Piura",
+      "Address1": "Av. Andrés Avelino Cáceres 147, Centro Comercial Open Plaza Piura, Urb. Miraflores, Castilla, Piura",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-5.183448044187414",
+      "Longitude": "-80.6375063046994",
+      "Description": "2D | 3D | INFINITY VISION",
+      "Slug": "cinemark-mallplaza-piura"
+    },
+    {
+      "ID": "744",
+      "Name": "Cinemark Mallplaza Trujillo",
+      "PhoneNumber": "",
+      "City": "Trujillo",
+      "Address1": "Av. America Oeste 750 Urb. El Ingenio Trujillo",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-8.102617081053241",
+      "Longitude": "-79.05124552396903",
+      "Description": "2D | 3D | DBOX | XD | INFINITY VISION",
+      "Slug": "cinemark-mallplaza-trujillo"
+    },
+    {
+      "ID": "743",
+      "Name": "Cinemark Megaplaza",
+      "PhoneNumber": "",
+      "City": "Lima",
+      "Address1": "Calle Alfredo Mendiola 3698 Km 8.5 de la Av. Panamericana Norte Independencia",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-11.99442974093061",
+      "Longitude": "-77.06456762391274",
+      "Description": "2D | 3D | DBOX | XD | INFINITY VISION",
+      "Slug": "cinemark-megaplaza"
+    },
+    {
+      "ID": "2700",
+      "Name": "Cinemark Open Plaza Huanuco",
+      "PhoneNumber": "",
+      "City": "Huánuco",
+      "Address1": "Jr. 2 de Mayo 125, La Quinta, Huánuco",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-9.93844360623887",
+      "Longitude": "-76.24971422394437",
+      "Description": "2D | 3D | INFINITY VISION",
+      "Slug": "cinemark-open-plaza-huanuco"
+    },
+    {
+      "ID": "741",
+      "Name": "Cinemark Chorrillos Cenco Lima Sur",
+      "PhoneNumber": "",
+      "City": "Lima",
+      "Address1": "Av. Prolongación Paseo de La República s/n Urb. Matellini - Chorrillos",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-12.1719468442462",
+      "Longitude": "-77.01609072390976",
+      "Description": "2D | 3D | DBOX | XD | INFINITY VISION",
+      "Slug": "Cinemark-Chorrillos-Cenco-Lima-Sur"
+    },
+    {
+      "ID": "742",
+      "Name": "Cinemark San Miguel",
+      "PhoneNumber": "",
+      "City": "Lima",
+      "Address1": "Av. La Marina cuadra 25 con esquina Av. Parque de las Leyendas",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-12.076552842458128",
+      "Longitude": "-77.09113822391141",
+      "Description": "2D | 3D | DBOX | XD | INFINITY VISION",
+      "Slug": "cinemark-san-miguel"
+    },
+    {
+      "ID": "2708",
+      "Name": "Cinemark Asia",
+      "PhoneNumber": "",
+      "City": "Asia",
+      "Address1": "Boulevard de Asia. Km 97.5 de la Panamericana Sur",
+      "Address2": "",
+      "LoyaltyCode": "",
+      "Latitude": "-12.762009055632184",
+      "Longitude": "-76.60474782389979",
+      "Description": "2D",
+      "Slug": "cinemark-asia"
+    }
+  ]
+}
